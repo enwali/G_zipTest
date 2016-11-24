@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.szhua.gip_test.TestActivity">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/zip_string_input"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_marginTop="40dp"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true"
+          android:hint="输入需要进行压缩的文字"
+          />
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="encrypt"
+          android:id="@+id/encrypt"
+          android:layout_marginTop="79dp"
+          android:layout_below="@+id/zip_string_input"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_marginLeft="41dp"
+          android:layout_marginStart="41dp" />
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="decrypt"
+          android:id="@+id/decrypt"
+          android:layout_alignBottom="@+id/encrypt"
+          android:layout_alignRight="@+id/zip_string_input"
+          android:layout_alignEnd="@+id/zip_string_input"
+          android:layout_marginRight="40dp"
+          android:layout_marginEnd="40dp" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:text="time:"
+          android:id="@+id/textView"
+          android:textColor="@color/colorAccent"
+          android:layout_below="@+id/encrypt"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_marginTop="43dp"
+          android:layout_alignRight="@+id/zip_string_input"
+          android:layout_alignEnd="@+id/zip_string_input" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:text="time:"
+          android:id="@+id/textView2"
+          android:layout_below="@+id/textView"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_marginTop="29dp"
+          android:textColor="@color/colorPrimaryDark"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true" />
+
+  </RelativeLayout>
+
+
+</ScrollView>
